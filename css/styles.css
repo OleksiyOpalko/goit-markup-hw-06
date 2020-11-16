@@ -133,7 +133,8 @@ padding-bottom: 32px;
 
 }
 
-.link:hover{
+.link:hover,
+.link:focus {
 fill: #2196F3 ;
 }
 
@@ -350,6 +351,7 @@ height: 581px;
   background:  #FFFFFF;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
+padding-top: 40px;
 }
 
 .close-icon {
@@ -366,6 +368,53 @@ border-radius: 4px;
     padding: 0;
     align-items: center;
     justify-content: center;
+}
+
+.form-title {
+
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-left: 41px;
+  margin-right: 39px;
+  margin-bottom: 10px;
+}
+
+.form-field label{
+  display: flex;
+  font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+margin-bottom: 4px;
+}
+
+.form-field input{
+  display: flex;
+  font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+margin-bottom: 4px;
+height: 40px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+input:hover {
+  border: 1px solid #2196F3;
+}
+
+
+.comment {
+  height: 96px;
+  padding: 12px 16px;
+  font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.01em;
+
 }
 
 .social-icon-x{
@@ -586,6 +635,7 @@ background-color: #2196F3;
     color: rgba(117, 117, 117, 1);
     overflow: hidden;
 }
+
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
@@ -611,11 +661,14 @@ margin-right: 0;
 }
 
 .portfolio-element:hover,
-.social-link:focus {
+.portfolio-element:focus,
+.social-link:focus
+ {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  .portfolio-element:hover .portfolio-text {
+  .portfolio-element:hover .portfolio-text,
+  .portfolio-element:focus .portfolio-text {
 transform:translateX(0);
   }
 
@@ -718,12 +771,14 @@ padding-bottom: 30px;
   margin-right: 0px;
 }  */
 
- .clients-icon:hover
+ .clients-icon:hover,
+ .clients-icon:focus
  {
    border-color:   #2196F3;
  }  
 
- .clients-icon:hover .company {
+ .clients-icon:hover .company,
+ .clients-icon:focus .company {
   fill: #2196F3;
 
 }
@@ -775,11 +830,13 @@ padding-bottom: 30px;
     margin-right: 10px;
     }
 
-  .team-social-link:hover .social-icon{
+  .team-social-link:hover .social-icon, 
+  .team-social-link:focus .social-icon{
  fill: white;
   }
   
-  .team-social-link:hover {
+  .team-social-link:hover,
+  .team-social-link:focus   {
     background-color: #2196F3;
   }
 
@@ -851,7 +908,8 @@ color: #FFFFFF;
   fill: white
     }
 
-.footer-icons:hover{
+.footer-icons:hover,
+.footer-icons:focus {
   background-color: #2196F3;
 }
 
