@@ -436,14 +436,21 @@ fill: #2196F3;
   }
 
   .checkbox {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
     position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
   }
 
 .label-check{
-  display: inline-block;
+  display: flex;
+ margin-top: 20px;
+  align-items: center;
+    justify-content: center;
 
 }
 
@@ -452,6 +459,8 @@ fill: #2196F3;
   width: 15px;
   height: 15px;
   border-radius: 2px;
+  margin-right: 9px;
+ 
   border: 2px solid black;
 }
 
@@ -462,6 +471,18 @@ background-image: url('../images/check.svg');
 background-size: contain;
 background-origin: border-box;
 }
+
+.license-accept{
+  font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+text-decoration: underline;
+color: #2196F3;
+
+}
+
 
 .why {
   padding-top: 94px;
@@ -900,7 +921,10 @@ padding-bottom: 30px;
 .social-link{
   
 }
-
+.form-name{
+  width: 12px;
+    height: 12px;
+}
 
 .contacts-icon{
       width: 16px;
