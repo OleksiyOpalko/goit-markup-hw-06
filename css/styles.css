@@ -200,6 +200,12 @@ padding-right: 15px; */
   padding-top: 12px;
   padding-left: 70px;
 }
+
+.subscribe{
+  display: inline-block;
+  padding-top: 12px;
+  padding-left: 93px;
+}
 .team-presentation {
   width: 1170px;
   /* padding-left: 15px;
@@ -424,6 +430,10 @@ line-height: 16px;
 letter-spacing: 0.01em;
 
 }
+.comment:hover {
+  border: 1px solid #2196F3;
+}
+
 
 .social-icon-x{
   background:  #ffffff;
@@ -922,10 +932,20 @@ padding-bottom: 30px;
   
 }
 .form-name{
-  width: 12px;
-    height: 12px;
+  width: 18px;
+    height: 18px;
+    position: absolute;
+  transform: translate(30%, 160%);
+ 
 }
 
+.form-field:hover .form-name{
+  fill: #2196F3;
+}
+.form-input{
+ 
+padding-left: 35px;
+}
 .contacts-icon{
       width: 16px;
     height: 16px;
@@ -941,11 +961,51 @@ font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-
+padding-bottom: 20px;
 color: #FFFFFF;
 }
 
-.social-footer li:not(:last-child){
+.subscribe-email{
+  width: 358px;
+height: 50px;
+padding-left: 16px;
+background: #2f303a;
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+
+}
+
+.subscribe-button {
+
+ display: inline-flex;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: white;
+  background-position: 160px center;
+  background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+
+.subscribe-name {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  text-align: center;
+}
+
+  .social-footer li:not(:last-child){
   margin-right: 10px;
 }
 

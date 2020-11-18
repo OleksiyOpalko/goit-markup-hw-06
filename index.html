@@ -57,12 +57,13 @@
             </svg> 
       
         </button>
+
         <form class="form js-speaker-form">
             <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+            
             <div class="form-field">
             <label for="name">Имя</label>
-            
-            <input type="text" name="name" id="name" >
+            <input class="form-input" type="text" name="name" id="name" >
             <svg class="form-name" >
                 <use href="./images/symbol-form.svg#icon-person"></use>
             </svg>
@@ -70,12 +71,18 @@
 
             <div class="form-field">         
             <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" >
+            <input class="form-input" type="tel" name="tel" id="tel" >
+            <svg class="form-name" >
+                <use href="./images/symbol-form.svg#icon-phone"></use>
+            </svg>
             </div>
 
             <div class="form-field">
             <label for="mail">Почта</label>
-            <input type="email" name="mail" id="mail">
+            <input class="form-input" type="email" name="mail" id="mail">
+            <svg class="form-name" >
+                <use href="./images/symbol-form.svg#icon-email"></use>
+            </svg>
             </div>
 
             <div class="form-field">
@@ -406,11 +413,14 @@
                 </li>
             </ul>
         </div>
-        <div class="join-to">
+        <div class="subscribe">
             <p class="join">Подпишитесь на рассылку</p>
             
-                <input type="email" name="mail" id="mail">
-               
+                <input class="subscribe-email" type="email" name="mail"  placeholder="E-mail">
+                <button type="submit" class="subscribe-button ">Подписаться &nbsp <svg class="subscribe-name" width="24" height="24" >
+                    <use href="./images/symbol-form.svg#icon-send"></use>
+                </svg> 
+          </button>
         </div>
 
    </div>
